@@ -243,7 +243,8 @@ class CircleMarkerApp(QMainWindow):
         center_lat = sum(lats) / len(lats)
         center_lon = sum(lons) / len(lons)
 
-        m = folium.Map(location=[center_lat, center_lon], zoom_start=8, tiles="OpenStreetMap")
+        m = folium.Map(location=[center_lat, center_lon], zoom_start=8, tiles="CartoDB Positron")
+
 
         folium.GeoJson(
             geojson_data,
